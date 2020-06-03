@@ -223,7 +223,7 @@ form button {
 /* <-- DESKTOP STYLES --> */
 @media all and (min-width: 800px) {
   .wrapper {
-    width: 70%;
+    width: 85%;
     margin: auto;
   }
   .group {
