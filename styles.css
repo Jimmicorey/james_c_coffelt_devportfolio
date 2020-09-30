@@ -59,14 +59,16 @@ footer {
 .wrapper {
   width: 100%;
 }
-.group {
+.flex-container {
   display: flex;
   flex-direction: column;
 }
+/*flex-item*/
 .item {
   flex: 1;
   margin: 20px;
 }
+/*flex-item-double*/
 .item-double {
   flex: 1;
 }
@@ -227,7 +229,7 @@ form button {
     width: 85%;
     margin: auto;
   }
-  .group {
+  .flex-container {
     flex-direction: row;
     justify-content: space-evenly;
   }
