@@ -136,11 +136,11 @@ header {
   margin-bottom: 160px;
 }
 .portfolio-header {
-  margin: -80px 0 10px 0;
+  margin: -50px 0 10px 0;
 }
 
 .project {
-  margin: 10px;
+  margin: 10px 10px 100px 10px;
 }
 .project-images {
   margin: 0 0 -55px 0;
