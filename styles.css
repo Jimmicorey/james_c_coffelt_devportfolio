@@ -19,9 +19,8 @@ p {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5em;
   margin-bottom: 0em;
+  color: rgb(0, 0, 52);
 }
-
-
 h2 {
   font-size: 1.95em;
   font-family: 'Permanent Marker', sans-serif;
@@ -29,7 +28,6 @@ h2 {
   text-align: center;
   padding-bottom: 10px;
 }
-
 h3 {
   font-size: 22px;
   font-family: 'Roboto', sans-serif;
@@ -37,16 +35,14 @@ h3 {
   text-align: center;
   padding-top: 50px;
 }
-
-#home {
-  margin-bottom: 10px;
-}
-
 footer {
   text-align: center;
   margin: 0 0 5px 0;
 }
 
+
+/********************************/
+/*********************************/
 .emphasis {
   font-weight: 700;
   font-size: 1.0125em;
@@ -55,10 +51,15 @@ footer {
 .emphasis2 {
   font-style: italic;
 }
+
+.emphasis3 {
+  font-weight: 700;
+}
 /*********************************/
-
-
 /********************************/
+
+
+
 /********************************/
 /* <-- MOBILE-FIRST DESIGN --> */
 .wrapper {
@@ -128,12 +129,29 @@ header {
 
 
 /* <-- INTRO SECTION -->*/
+#home {
+  margin-bottom: 10px;
+}
+#home p {
+  font-size: 1.235em;
+  text-align: left;
+  padding: 0 5px;
+  color: rgb(0, 0, 52);
+}
 .self-pic{
-  width: 95%;
+  width: 100%;
+  margin: 0 0 -50px 0;
+  object-fit: cover;
+  border-radius: 5%;
+  border-top: 5px solid blue;
+  border-bottom: 15px solid blue;
+  border-left: 10px double yellow;
+  border-right: 10px double yellow;
+
 }
 .intro {
   font-size: 1.65em;
-  color: #000;
+  color: rgb(0, 0, 52);
 }
 
 /* <-- ABOUT ME SECTION --> */
@@ -157,16 +175,20 @@ header {
   bottom: 0;
   left: 0;
   opacity: 0.35;
+  overflow: hidden;
 }
 #about h2 {
   letter-spacing: .155em;
   position: relative;
   color: white;
   margin: 0 0 -20px 0;
+  text-shadow: 2px 2px 2px black;
 }
 #about p {
   position: relative;
+  font-size: 1.235em;
   color: white;
+  text-shadow: 2px 2px 2px black;
 }
 
 
@@ -174,22 +196,23 @@ header {
 
 /* <-- PORTFOLIO SECTION --> */
 #portfolio {
-  margin-bottom: 50px;
+  margin: 20px 0;
 }
 
 .portfolio-header {
-  margin: -50px 0 10px 0;
   letter-spacing: .045em;
+  color: rgb(0, 0, 52);
 }
 
 .project {
-  margin: 10px 10px 100px 10px;
+  margin: 10px 20px 100px 20px;
 }
 .project p {
   font-size: 1.125em;
 }
-.project span {
+.tech, .roles {
   font-size: 1.135em;
+  margin: 0 10px;
 }
 .project-images {
   margin: 0 0 -55px 0;
@@ -208,8 +231,9 @@ header {
 }
 .project-links {
   display: flex;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-evenly;
+  padding: 5px 0 0 0;
+  font-size: 1.225em;
 }
 .project-title a:hover,
 .project-title a:focus,
@@ -327,28 +351,95 @@ form button:hover {
 
 
 /* <-- DESKTOP STYLES --> */
-@media all and (min-width: 800px) {
+@media screen and (min-width: 800px) {
   .wrapper {
-    width: 85%;
+    width: 95%;
     margin: auto;
   }
   .flex-container {
     flex-direction: row;
     justify-content: space-evenly;
   }
-  main h2 {
-    font-size: 38px;
-  }
+
+  /* <-- HEADER & SITE NAV --> */
   header {
-    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
   }
-  header h1 {
-    margin: 20px 0 20px 20px;
-    padding-top: 0;
-    font-size: 42px;
+  .logotype {
+    padding: 20px 0;
   }
-  header nav {
-    margin-top: 14px;
+
+  .navbar {
+    margin-right: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
+  #menu {
+    justify-content: space-evenly;
+    font-size: 1.35em;
+  }
+  #menu>li {
+    padding: 10px;
+  }
+
+  /* <-- INTRO SECTION -->*/
+  #home {
+    margin-bottom: 10px;
+  }
+  #home p {
+    font-size: 1.5em;
+    text-align: left;
+    padding: 0 5px;
+    margin-left: -150px;
+    color: rgb(0, 0, 52);
+  }
+  .self-pic{
+    width: 60%;
+    margin-top: 10%;
+    object-fit: cover;
+    border-top: 15px solid blue;
+    border-bottom: 25px solid blue;
+    border-left: 20px double yellow;
+    border-right: 20px double yellow;
+
+  }
+  .intro {
+    font-size: 1.95em;
+    margin-left: -150px;
+    margin-top: 10%;
+  }
+
+  /* <-- ABOUT ME SECTION --> */
+  #about h2 {
+    font-size: 2.5em;
+
+  }
+  #about p {
+    font-size: 1.5em;
+  }
+
+  /* <-- PORTFOLIO SECTION --> */
+  .portfolio-header {
+    letter-spacing: .055em;
+    font-size: 2.5em;
+    margin-top: -50px;
+    margin-bottom: 30px;
+  }
+
+  /* <-- CONTACT ME SECTION --> */
+  #contact {
+    height: 90vh;
+    margin: -10px 0;
+  }
+  #contact h2 {
+    font-size: 2.5em;
+    margin: 0 0 50px 0;
+  }
+  address {
+    text-align: center;
+    padding: 0 0 30px 0;
+    font-size: 1.5em;
+  }
+
 }
