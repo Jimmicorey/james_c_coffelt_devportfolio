@@ -6,7 +6,10 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link href='normalize.css' rel='stylesheet' type='text/css'>
     <link href='styles.css' rel='stylesheet' type='text/css'>
+
     <title>James Coffelt Web Dev Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/0695b672fb.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,7 +20,8 @@
             James Coffelt
         </h1>
 
-        <nav>
+        <!-- NAVIGATION MENU BAR -->
+        <nav class='navbar'>
             <ul id='menu'>
                 <li>
                     <a href='#home'>Home</a>
@@ -35,6 +39,7 @@
         </nav>
     </header>
 
+
     <main>
     
         <!-- HOME INTRODUCTION SECTION -->
@@ -43,6 +48,7 @@
                 <div class='flex-container'>
                     <div class='flex-item'>
                         <img 
+                            class='self-pic'
                             src='images/jamescoffelt_profile_pic.jpg' 
                             alt='James dressed as Bob Ross'
                         > 
@@ -73,18 +79,16 @@
                 <div class='flex-container'>
                     <div class='flex-item'>
                         <p>
-                            My passion for coding is on equal ground with my love of visual design. I get the same rush of endorphins from both. I seek to work with the best... learn from the best... so I can grow and become the best developer I can be. Never Stop Learning.
+                            My passion for coding is on equal ground with my love of visual design. I get the same rush of endorphins from both. I seek to work with the best... learn from the best... so I can grow and become the best developer & designer I can be.
                         </p>
 
                         <p>
-                            Outside of programming, my interests are wide and various. From playing boardgames and Dungeons & Dragons with friends & family, drawing & painting, traveling the world... and now playing with my baby son.
+                            Never Stop Learning. Never stop creating.
                         </p>
-                    </div>
-                    <div class='flex-item flex-item-double'>
-                        <img 
-                            src='images/cropped-004.jpg' 
-                            alt='PLACEHOLDER IMAGE'
-                        > 
+
+                        <p>
+                            Outside of programming, my interests are wide and various. From playing boardgames and Dungeons & Dragons with friends & family, drawing & painting, traveling the world... and now playing with my infant son.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -121,21 +125,22 @@
                             An easy to use data logging app designed to keep track of baby feedings, diaper changes, and bath times. This is a solo-project I developed for my wife and I because we are new parents and needed an easy way to log this data when barely awake at 3:00AM.
                         </p>
 
-                        <p>Project Roles:</p>
+                        <p class='emphasis'>Project Roles:</p>
                         <span>
                             Developer (front-end & back-end) & Designer
                         </span>
 
-                        <p>Tech Used:</p>
+                        <p class='emphasis'>Tech Used:</p>
                         <span>
                             HTML5, CSS3, React, Node, Express, PostgreSQL
                         </span>
 
-                        <p>Source Code Links:</p>
-                        <a href='https://github.com/Jimmicorey/my-baby-log-app'>Client Repo</a>
-                        <a href='https://github.com/Jimmicorey/my-baby-log-api'>Server Repo</a>
+                        <p class='emphasis'>Source Code Links:</p>
+                        <div class='project-links'>
+                            <a href='https://github.com/Jimmicorey/my-baby-log-app'>Client Repo</a>
+                            <a href='https://github.com/Jimmicorey/my-baby-log-api'>Server Repo</a>
+                        </div>
                     </div>
-
 
                     <!-- PROJECT : LETS LEARN SPANISH APP -->
                     <div class='project flex-item'>
@@ -152,24 +157,26 @@
                         <h3 class='project-title'>
                             <a href='https://spaced-repetition-client-james-ver1.vercel.app'>Let's Learn Spanish</a>
                         </h3>
-                        
+
                         <p>
                             A fun little app that utilizes the "spaced repetition method" to help one learn Spanish.
                         </p>
 
-                        <p>Project Roles:</p>
+                        <p class='emphasis'>Project Roles:</p>
                         <span>
                             Co-Developer (front-end & back-end), Lead Designer
                         </span>
 
-                        <p>Tech Used:</p>
+                        <p class='emphasis'>Tech Used:</p>
                         <span>
                             HTML5, CSS3, React, Node, Express, PostgreSQL
                         </span>
 
-                        <p>Source Code Links:</p>
-                        <a href='https://github.com/Jimmicorey/Spaced-Repetition_CLIENT_james-ver1'>Client Repo</a>
-                        <a href='https://github.com/Jimmicorey/Spaced-Repetition_SERVER_james-ver1'>Server Repo</a>
+                        <p class='emphasis'>Source Code Links:</p>
+                        <div class='project-links'>
+                            <a href='https://github.com/Jimmicorey/Spaced-Repetition_CLIENT_james-ver1'>Client Repo</a>
+                            <a href='https://github.com/Jimmicorey/Spaced-Repetition_SERVER_james-ver1'>Server Repo</a>
+                        </div>
                     </div>
 
                     <!-- PROJECT : LETS LEARN SPANISH APP -->
@@ -193,19 +200,21 @@
                             A finance and savings app which simplifies and automates personal money management.
                         </p>
 
-                        <p>Project Roles:</p>
+                        <p class='emphasis'>Project Roles:</p>
                         <span>
                             Lead Designer in charge of UX/UI design & style developement
                         </span>
 
-                        <p>Tech Used:</p>
+                        <p class='emphasis'>Tech Used:</p>
                         <span>
                             HTML5, CSS3, React, Node, Express, PostgreSQL
                         </span>
 
-                        <p>Source Code Links:</p>
-                        <a href='https://github.com/M-Sayer/felix-web'>Client Repo</a>
-                        <a href='https://github.com/M-Sayer/felix-server'>Server Repo</a>
+                        <p class='emphasis'>Source Code Links:</p>
+                        <div class='project-links'>
+                            <a href='https://github.com/M-Sayer/felix-web'>Client Repo</a>
+                            <a href='https://github.com/M-Sayer/felix-server'>Server Repo</a>
+                        </div>
                     </div>
 
                 </div>
@@ -231,14 +240,20 @@
                         </address>
                         <section id='social'>
                             <ul>
-                                <li>
-                                    <a href='https://www.linkedin.com/in/jamescoreycoffelt'>LinkedIn</a>
+                                <li>                                    
+                                    <a href='https://www.linkedin.com/in/jamescoreycoffelt'>
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                                <li>                                    
+                                    <a href='https://github.com/Jimmicorey'>
+                                        <i class="fab fa-github"></i>
+                                    </a>
                                 </li>
                                 <li>
-                                    <a href='https://github.com/Jimmicorey'>GitHub</a>
-                                </li>
-                                <li>
-                                    <a href='https://twitter.com/codeman_jimjam'>Twitter</a>
+                                    <a href='https://twitter.com/codeman_jimjam'>
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </section>
@@ -299,6 +314,9 @@
     <footer>
         <p>Copyright 2020 James C. Coffelt</p>
     </footer>
+
 </body>
+
+
 
 </html>
