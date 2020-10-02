@@ -219,6 +219,7 @@ header {
 }
 .project img {
   width: 50%;
+  height: 50%;
 }
 .project-title {
   font-weight: 700;
