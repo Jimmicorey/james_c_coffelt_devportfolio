@@ -15,9 +15,14 @@ li {
 a {
   text-decoration: none;
 }
+p {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5em;
+  margin-bottom: 0em;
+}
 
 
-main h2 {
+h2 {
   font-size: 1.95em;
   font-family: 'Permanent Marker', sans-serif;
   font-weight: 400;
@@ -25,7 +30,7 @@ main h2 {
   padding-bottom: 10px;
 }
 
-main h3 {
+h3 {
   font-size: 22px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -33,24 +38,22 @@ main h3 {
   padding-top: 50px;
 }
 
-main p {
- font-family: 'Roboto', sans-serif;
- line-height: 1.5em;
- margin-bottom: 0em;
-}
-
-
-#home, #contact {
+#home {
   margin-bottom: 10px;
 }
 
 footer {
   text-align: center;
+  margin: 0 0 5px 0;
 }
 
 .emphasis {
   font-weight: 700;
   font-size: 1.0125em;
+}
+
+.emphasis2 {
+  font-style: italic;
 }
 /*********************************/
 
@@ -126,7 +129,7 @@ header {
 
 /* <-- INTRO SECTION -->*/
 .self-pic{
-  width: 75%;
+  width: 95%;
 }
 .intro {
   font-size: 1.65em;
@@ -145,7 +148,9 @@ header {
 #about::before {
   content: '';
   background-image: url('images/james-n-son.jpg');
-  background-size: cover;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
   position: absolute;
   top: 0;
   right: 0;
@@ -157,6 +162,7 @@ header {
   letter-spacing: .155em;
   position: relative;
   color: white;
+  margin: 0 0 -20px 0;
 }
 #about p {
   position: relative;
@@ -168,8 +174,9 @@ header {
 
 /* <-- PORTFOLIO SECTION --> */
 #portfolio {
-  margin-bottom: 160px;
+  margin-bottom: 50px;
 }
+
 .portfolio-header {
   margin: -50px 0 10px 0;
   letter-spacing: .045em;
@@ -177,6 +184,12 @@ header {
 
 .project {
   margin: 10px 10px 100px 10px;
+}
+.project p {
+  font-size: 1.125em;
+}
+.project span {
+  font-size: 1.135em;
 }
 .project-images {
   margin: 0 0 -55px 0;
@@ -187,10 +200,16 @@ header {
 .project-title {
   font-weight: 700;
   font-style: oblique;
+  margin: 40  px 0 10px 0;
 }
 .project-title a,
 .project-links a {
   color: blue;
+}
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
 }
 .project-title a:hover,
 .project-title a:focus,
@@ -213,6 +232,7 @@ header {
   background-color: blue;
   color: rgb(255, 255, 255);
   padding: 20px 0 0 0;
+  margin-bottom: 10px;
 }
 #contact h2 {
   letter-spacing: .155em;
@@ -220,13 +240,15 @@ header {
 }
 address {
   text-align: center;
-  padding: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  font-size: 1.215em;
 }
 
 
 /* <-- CONTACT FORM --> */
 form {
   color: white;
+  margin: -55px 0 0 0;
 }
 fieldset {
   border: 0;
@@ -234,31 +256,50 @@ fieldset {
 form label {
   display: block;
   margin: 10px 0;
-  font-size: 20px;
+  font-size: 1.25em;
 }
-form input, 
-form textarea {
+form input {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 form input[type=text],
 form input[type=email] {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  padding: 5px 0 5px 10px;
   color:  #000;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 form textarea {
-  height: 200px;
+  width: 100%;
+  height: 25vh;
+  color: #000;
+  font-size: 1.5em;
+  margin-bottom: 10px;
 }
 form button {
   color: blue;
   background-color: white;
-  font-size: 20px;
+  font-size: 1.25em;
   margin: 10px 15px;
   padding: 5px 10px;
   border-radius: 10px;
   text-align: center;
 }
+form input[type=text]:focus,
+form input[type=email]:focus,
+form textarea:focus,
+form button:focus,
+form input[type=text]:hover,
+form input[type=email]:hover,
+form textarea:hover,
+form button:hover {
+  background-color: yellow;
+  outline: none;
+  font-size: 1.5em;
+  font-weight: 400;
+  box-shadow: 3px 4px 2px black;
+}
+
 
 /* <-- SOCIAL MEDIA LINKS --> */
 #social ul {
