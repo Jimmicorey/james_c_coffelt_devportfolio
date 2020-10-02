@@ -215,11 +215,12 @@ header {
   margin: 0 10px;
 }
 .project-images {
-  margin: 0 0 -55px 0;
+  margin: 0 auto -55px auto;
+  width: 50%;
 }
 .project img {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 .project-title {
   font-weight: 700;
