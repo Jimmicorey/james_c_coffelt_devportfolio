@@ -4,7 +4,7 @@
 https://jimmicorey.github.io/james_c_coffelt_devportfolio/
 
 ## GitHub Repo: 
-https://github.com/Jimmicorey/james_c_coffelt_portfolio1-master
+https://jimmicorey.github.io/james_c_coffelt_devportfolio/
 
 ## Technology Used:
 * HTML 5
